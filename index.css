@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/spec/hogwarts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    background-color: darkslateblue;
+    max-width: 80%;
+    width:800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:10px;
+    margin: 10px 0;
+}
+.btn{
+    background-color: mediumslateblue;
+    border: solid  rgb(90, 73, 184) 1px;
+    border-radius: 5px;
+    padding: 5px 5px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+.btn:hover{
+    background-color: thistle;
+    border:solid rgb(146, 129, 146) 1px;
+}
+.btn.true{
+    background-color: rgb(6, 107, 30);
+    color:black;
+}
+.btn.false{
+    background-color: rgb(168, 20, 20)
+}
+.st-btn, .nt-btn{
+    font-size: 2.1vh;
+    font-weight: 700;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+    
+}
+.count{
+    position: absolute;
+    top:0;
+    text-align: center;
+    font-size: 10vh;
+    color: white;
+    opacity: 80%;
+}
+#quest{
+    font-size: 2.1vh;
+    margin-left: 10px;
+}
